@@ -135,7 +135,9 @@ In this exercise you will:
 
 1. **How do you pass a file name to a program using the `-i` and `-o` options?**
 2. **What are typical use cases for parameters versus flags? How do the differ from one another?**
-
+solutions:
+1. man gibt in der kommandozeile an. im code speichert getopt() diese als strings.
+2. flag ist nur für ein shalter, ohne wert. parameter kommen aber mit einem wert
 ---
 
 ### Task 3: Interactive Input with `scanf` & `fscanf`
@@ -187,7 +189,8 @@ In this exercise you will:
 #### Reflection Question
 
 * **Why is a run-to-completion (batch) approach often preferable to interactive input?**
-
+solutions:
+im batch modus kann man Programme automatisieren. Bei interaktiver Eingabe muss man immer manuell tippen und das ist langsamer 
 ---
 
 ### Task 4: Input Redirection from STDIN
@@ -218,7 +221,8 @@ In this exercise you will:
 #### Reflection Question
 
 * **What is the difference between redirecting to stdin and explicitly opening a file with `fopen`?**
-
+solutions:
+Bei Umleitung zu stdin liest das programm direkt von der Eingabe aber mit fopen ("datei.txt","r") öffnet man die Datei im code explixit
 ---
 
 ### Task 5: Caesar Cipher & Prototype Asymmetric XOR Cipher
@@ -408,7 +412,9 @@ In this exercise you will:
 #### Reflection Question
 
 * **Explain in your own words what the encryption and decryption processes are doing in both ciphers.**
-
+solutopn:
+caesar-Verknupfung: die Buchstaben werden um eine feste Anzahl verschoben
+XOR-Verschlüsselung: jedes Zeichen wird mit einem schlüssel bit verknüpft 
 ---
 
 **Remember:** Stop after **90 minutes** and record where you stopped.
